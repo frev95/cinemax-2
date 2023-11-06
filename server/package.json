@@ -1,0 +1,15 @@
+{
+  "name": "cinemax-api",
+  "version": "1.0.0",
+  "description": "API de gestion de l'application Cinemax",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "author": "Jensone",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^3.0.1"
+  }
+}
