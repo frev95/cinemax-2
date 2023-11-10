@@ -1,14 +1,15 @@
 const fs = require('fs')
+const favoritesFile = './favorites.json'
 
 const Save = (movieID) =>
 {
     let status = false // On définit une variable de statut pour savoir si tout s'est bien passé
-    let favoritesList = fs.readFileSync('./data.json', 'utf8') // On récupère la liste des favoris
+    let favoritesList = fs.readFileSync(favoritesFile, 'utf8') // On récupère la liste des favoris
     let favorites = JSON.parse(favoritesList).favorites // On parse la liste des favoris
     const newFavorite = { id: movieID, movie: movieID } // On crée un nouvel objet film
     favorites.push(newFavorite) // On ajoute le nouveau film à la liste des favoris
     try {
-        fs.writeFileSync('./data.json', JSON.stringify({ favorites }))
+        fs.writeFileSync(favoritesFile, JSON.stringify({ favorites }))
         status = true // Si tout s'est bien passé, on renvoie true
     } catch (error) {
         console.log(error)
