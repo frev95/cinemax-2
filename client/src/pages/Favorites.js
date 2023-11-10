@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Movies from "../components/Movies";
+import Nav from "../components/Nav";
 
 const Favorites = () => {
     const [favoriteIDs, setFavoriteIDs] = useState([]);         // liste des favoris
@@ -64,7 +65,8 @@ const Favorites = () => {
 
     return (
         <>
-            <h1>Favoris</h1>
+            <Nav />
+            <h1>Mes favoris</h1>
         {/* <ul> { favoriteIDs.map((favorite) => ( <li key={favorite.id}> {favorite.movie} </li> )) } </ul>   // pour test */}
             <div>
                 <Movies movies={favoriteMovies} />

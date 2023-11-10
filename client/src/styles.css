@@ -18,7 +18,7 @@ body {
   font-size: 1rem;
   line-height: 1.5;
   color: #fff;
-  background: #222;
+  background: #343434;
   background-image: url("/src/assets/cinemax-bg.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -215,4 +215,46 @@ input[type="text"]:focus {
   height: 30px;
   object-fit: none;
   padding-top: 0;
+}
+
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.65em;
+  background: #343434;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+
+.nav {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3em;
+  margin-left: 2em;
+}
+
+
+.nav a img:hover {
+  
+}
+
+
+.nav-item a {
+  text-decoration: none;
+  color: #999999;
+}
+
+
+.nav-item a:hover {
+  color: #bababa;
+}
+
+
+h1 {
+  margin-left: 0.4em;
 }

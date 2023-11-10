@@ -5,6 +5,7 @@ import cinemaxLogo from "../assets/cinemax-lg.png";
 // Nos composants
 import Search from "../components/Search";
 import Movies from "../components/Movies";
+import Nav from "../components/Nav";
 
 export default function App() {
   // OMDB API
@@ -32,18 +33,21 @@ export default function App() {
   }, []);
 
   return (
-    <div className="App">
-      <header>
-        <img src={cinemaxLogo} className="logo" alt="logo cinemax" />
-        <Search
-          search={search}
-          setSearch={setSearch}
-          searchMovies={searchMovies}
-        />
-      </header>
-      <main>
-        <Movies movies={movies} />
-      </main>
-    </div>
+    <>
+      <Nav />
+      <div className="App">
+        <header>
+          <img src={cinemaxLogo} className="logo" alt="logo cinemax" />
+          <Search
+            search={search}
+            setSearch={setSearch}
+            searchMovies={searchMovies}
+          />
+        </header>
+        <main>
+          <Movies movies={movies} />
+        </main>
+      </div>
+    </>
   );
 }
