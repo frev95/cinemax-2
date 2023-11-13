@@ -15,10 +15,10 @@
 
 /* ================= N.B: Par défaut, le port client est configuré à 3000 ================= */
 
-import React from "react"
-import ReactDOM from "react-dom/client"
+import React from "react";
+import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import "./styles.css"
+import "./styles.css";
 import Home from "./pages/Home";
 import Favorites from "./pages/Favorites";
 
